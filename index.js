@@ -1,3 +1,14 @@
+function checkRefresh() {
+  if (!sessionStorage.getItem("myFunction")) {
+    sessionStorage.setItem("myFunction", "extra")
+
+  } else(
+    myFunction()
+  )
+
+}
+function myFunction()
+{
 var randomNumber1=Math.floor(Math.random()*6)+1;
 var randomNumber2=Math.floor(Math.random()*6)+1;
 document.querySelector(".img1").setAttribute("src", "images/dice"+randomNumber1+".png");
@@ -14,3 +25,6 @@ else
 {
   document.querySelector("h1").innerText="Draw!! Roll Again";
 }
+}
+
+document.querySelector("body").onload = checkRefresh();
