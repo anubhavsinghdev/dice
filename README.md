@@ -1,1 +1,2 @@
-Simple dice game using js, css and html.
+# Dice
+Random dice winner using HTML, CSS, Bootstrap, JavaScript
